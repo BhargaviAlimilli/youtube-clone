@@ -1,12 +1,17 @@
 import './App.css';
-import {Grid} from '@mui/material'
+import {Box} from '@mui/material'
+import {Route,Router,Link} from 'react-router-dom'
+import Navbar from './components/NavBar';
+import SearchBar from './components/SearchBar';
+
 
 function App() {
   return (
-    <div className="App">
-      <h1> Youtube clone </h1>
-    </div>
-  );
+      <Box sx={{ p: 1 }}>
+        <h1>Youtube Clone</h1>
+        <Navbar />
+      </Box>
+  )
 }
 
 export default App;
